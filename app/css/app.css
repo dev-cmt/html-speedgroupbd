@@ -469,10 +469,10 @@
 
 .main-header .main-menu .navigation > li > ul {
   position: absolute;
-  width: 243px;
-  border-radius: 6px;
+  width: 240px;
+  border-radius: 0px; /*CH-0px*/
   z-index: 1;
-  padding: 20px 30px 20px 30px;
+  padding: 0px; /*CH-20px 30px*/
   transform: translateY(15px);
   -webkit-transform-origin: top;
   -ms-transform-origin: top;
@@ -505,7 +505,7 @@
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
-  margin-bottom: 15px;
+  margin-bottom: 0px; /*15px*/
 }
 
 .main-header .main-menu .navigation > li > ul > li:last-child {
@@ -530,6 +530,7 @@
   text-transform: capitalize;
   color: #081E2A;
   transition: all 0.3s ease;
+  padding: 10px 15px; /*CH-Add*/
   -moz-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
   -ms-transition: all 0.3s ease;
@@ -538,6 +539,8 @@
 
 .main-header .main-menu .navigation > li > ul > li:hover > a {
   color: #4DA528;
+  padding: 10px 15px; /*CH-Add*/
+  background: #4da52833; /*CH-Add*/
 }
 
 .main-header .main-menu .navigation > li > ul > li:hover > a::before {
@@ -874,7 +877,7 @@
   display: none;
   background: #081E2A;
   padding: 15px 20px;
-  border-radius: 10px;
+  border-radius: 0px; /*CH-10px*/
 }
 
 .mobile-menu .navigation li > ul > li,
@@ -5465,7 +5468,7 @@
 .slider-home1 .silider-image .booking-title {
   position: absolute;
   z-index: 3;
-  right: 33.6%;
+  left: 45%; /*CH-right: 33.6%;*/
   top: 11%;
   rotate: -5deg;
 }
@@ -5519,6 +5522,14 @@
   border: 2px solid #4DA528;
   bottom: 0px;
   right: -15px;
+}
+.slider-home1 .silider-image .booking-img{
+  position: absolute;
+  left: 50%;
+  z-index: 4;
+}
+.slider-home1 .silider-image .booking-img img{
+  width: 245px; 
 }
 .slider-home1 .slider-content {
   position: relative;
@@ -10350,6 +10361,10 @@ body .dribbble img {
   .slider-home1 .silider-image .booking-title {
     right: 10.6%;
     top: 6%;
+  }
+  .slider-home1 .silider-image .booking-img {
+    left: 20%;
+    top: -5%;
   }
   .slider-home1 .slider-content .title-slide {
     font-size: 50px;
