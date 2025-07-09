@@ -161,7 +161,7 @@
 
 .header-sidebar {
   background-color: #4DA528;
-  padding: 30px 60px;
+  padding: 20px 15px; /*CH-30px 60px*/
 }
 .header-sidebar i {
   font-size: 33px;
@@ -309,7 +309,7 @@
 }
 .main-header .header-lower .fly-ab {
   position: absolute;
-  width: auto;
+  width: 136px; /*CH-auto*/
   left: -8px;
   top: 0;
 }
@@ -419,7 +419,7 @@
   position: relative;
   display: block;
   text-align: center;
-  line-height: 26px;
+  line-height: 6px; /*CH-26*/
   font-weight: 600;
   padding: 33px 0px;
   letter-spacing: 0px;
@@ -5174,14 +5174,18 @@
 }
 
 .offcanvas .offcanvas-body .logo-canvas {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .offcanvas .offcanvas-body .logo-canvas img {
   width: 170px;
 }
 .offcanvas .offcanvas-body .des {
   color: #4F545A;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+  border-top: dotted;
+  border-bottom: dotted;
+  padding: 15px 0px;
 }
 .offcanvas .offcanvas-body .canvas-info {
   margin-bottom: 20px;
@@ -5193,6 +5197,9 @@
 }
 .offcanvas .offcanvas-body .canvas-info li p {
   color: #4F545A;
+}
+.offcanvas .offcanvas-body .social {
+  justify-content: center;
 }
 .offcanvas .offcanvas-body .social li a {
   background-color: #4DA528;
@@ -9861,7 +9868,7 @@ input[type=radio] + label:before {
 
 input[type=radio] {
   display: none !important;
-  *display: inline;
+  display: inline;
 }
 input[type=radio]:checked + label:after {
   content: "";
@@ -9899,7 +9906,7 @@ input[type=checkbox] + label:before {
 
 input[type=checkbox] {
   display: none !important;
-  *display: inline;
+  display: inline;
 }
 input[type=checkbox]:checked + label:after {
   content: "\e9c7";
