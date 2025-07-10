@@ -5524,9 +5524,10 @@
   right: -15px;
 }
 .slider-home1 .silider-image .booking-img{
-  position: absolute;
-  left: 50%;
+  position: relative;
   z-index: 4;
+  display: flex;
+  justify-content: center;
 }
 .slider-home1 .silider-image .booking-img img{
   width: 245px; 
@@ -10362,9 +10363,8 @@ body .dribbble img {
     right: 10.6%;
     top: 6%;
   }
-  .slider-home1 .silider-image .booking-img {
-    left: 20%;
-    top: -5%;
+  .slider-home1 .silider-image .booking-img img{
+    width: 196px;
   }
   .slider-home1 .slider-content .title-slide {
     font-size: 50px;
